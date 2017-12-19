@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Title</title>
+	<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/iconfont.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script src='./js/mui.min.js'></script>
+</head>
+<body>
+	<div id="box">
+		<div class="container">
+			<header>
+				<div class="now-add">
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-address"></use>
+					</svg>
+					<span class="city"></span>
+				</div>
+				<p class="serach">
+					<input type="text" placeholder="请输入要查询的城市......" name="city" id="tex">
+					<svg class="icon" aria-hidden="true" id="btn">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icserachpub"></use>
+					</svg>
+				</p>
+			</header>
+			<div class="show-weather">
+				<div class="wendu">
+					<p class="now-wendu"></p>
+					<p class="type"></p>
+				</div>
+				<p class="icon-type">
+					<img class="icon-type-weather" />
+				</p>
+				<div class="ganmao"></div>
+			</div>
+			<ul class="after">
+				<!--<li>
+					<p class="date">
+						<p>24号</p>
+						<p>星期五</p>
+					</p>
+					<img class="icon-type-weather-week" src="img/duoyun.png"/>
+					<p class="high">25℃</p>
+					<p class="low">16℃</p>
+				</li>-->
+			</ul>
+		</div>
+		<div id="site"></div>
+	</div>
+</body>
+<script>
+	mui.init({
+	  keyEventBind: {
+	    backbutton: true // 打开back按键监听
+	  }
+	})
+</script>
+
+</html>
