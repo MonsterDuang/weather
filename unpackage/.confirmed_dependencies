@@ -1,0 +1,24 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/my_ajax.js",
+      "js/iconfont.js",
+      "css/main.css",
+      "img/\u001aý.png",
+      "img/t.png",
+      "/img/\u001aý.png",
+      "img/-ý.png",
+      "img/\u000fý.png",
+      "img/5ý.png",
+      "img/\u001aý.png",
+      "img/t.png",
+      "/img/\u001aý.png",
+      "img/-ý.png",
+      "img/\u000fý.png",
+      "img/5ý.png"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}
