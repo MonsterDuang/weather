@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	background: #476a87;
+}
+#box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.icon {
+   width: 1em; 
+   height: 1.1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   font-size: 1.3rem;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+header{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	background: #96c2cb;
+	z-index: 100;
+}
+.now-add{
+	position: absolute;
+	left: 2%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.serach{
+	width: 70%;
+	height:80%;
+	position: absolute;
+	right: 5%;
+	top: 10%;
+}
+.city{
+	font-weight: bolder;
+	position: relative;
+	left:-6%
+}
+#tex{
+	width: 100%;
+	height:100%;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	padding-left: 1%;
+	background: #96c2cb;
+}
+#btn{
+	height: 90%;
+	width: 1.5rem;
+	position: absolute;
+	right: 1%;
+	top: 5%
+}
+.show-weather{
+	width: 50%;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+} 
+.wendu{
+	width: 70%;
+	height:100%;
+	text-align: center;
+	line-height: 3em;
+}
+.now-wendu{
+	font-size: 3.2em;
+	font-weight: bolder;
+}
+.icon-type{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30%
+}
+.icon-type-weather{
+	width: 100%
+}
+.ganmao{
+	width: 90%;
+	color: #fff;
+	text-indent: 1em;
+	margin-left: .8em;
+}
+
+.after{
+	width:100%;
+	position: absolute;
+	top: 70%;
+	color: #fff
+}
+.after li{
+	list-style: none;
+	width: 19.78%;
+	text-align: center;
+	line-height: 2em;
+	border-right: #CCCCCC solid 1px;
+	float: left;
+}
+.after li:nth-of-type(5n){
+	border: none;
+}
+.date{
+	line-height: 1.5em;
+}
+.date p:last-child{
+	font-size: .8em;
+}
+.icon-type-weather-week{
+	width: 50%;
+}
