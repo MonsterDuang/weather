@@ -75,20 +75,20 @@ function Main() {
 			if ($('.after li').length === 5) {
 				$('.after li').remove()
 			}
-			$('#site').text(Week)
 			for (var i = 0; i < Week.length; i++) {
 				$li = $('<li></li>')
 				$('.after').append($li)
 				$date = $('<p></p>').attr('class', 'date')
 				$li.append($date)
-				var day = Week[i].date.substr(0,3)
-				$date.append($('<p></p>').text(day))
-				var week = i === 0 ? '今天' : Week[i].date.substr(3)
+				var day = Week[i].date.split('日')[0]
+				$date.append($('<p></p>').text(day + '日'))
+				var week = i === 0 ? '今天' : Week[i].date.split('日')[1]
 				$date.append($('<p></p>').text(week))
 				$img = $('<img></img>').attr({
 					'src': getImg(Week[i].type),
 					'class': 'icon-type-weather-week'
 				})
+				$('#site').text(Week[2].type)
 				$li.append($img)
 				$high = $('<p></p>').attr('class', 'high').text(Week[i].high.substr(3))
 				$low = $('<p></p>').attr('class', 'low').text(Week[i].low.substr(3))
@@ -154,6 +154,7 @@ function Main() {
 				return './img/zhongxue.png'
 				break
 			case '中雨':
+			case '小到中雨':
 				return './img/zhongyu.png'
 				break
 		}
