@@ -11,7 +11,7 @@
 	<script src='./js/mui.min.js'></script>
 </head>
 <body>
-	<div id="box refreshContainer">
+	<div id="box pullrefresh">
 		<div class="container">
 			<header>
 				<div class="now-add">
@@ -58,7 +58,7 @@
 	    backbutton: true // 打开back按键监听
 	  },
 	pullRefresh : {
-	    container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+	    container:"#pullrefresh",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
 	    down : {
 	      style:'circle',//必选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
 	      color:'#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
