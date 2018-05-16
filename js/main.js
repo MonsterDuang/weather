@@ -88,7 +88,6 @@ function Main() {
 					'src': getImg(Week[i].type),
 					'class': 'icon-type-weather-week'
 				})
-				$('#site').text(Week[2].type)
 				$li.append($img)
 				$high = $('<p></p>').attr('class', 'high').text(Week[i].high.substr(3))
 				$low = $('<p></p>').attr('class', 'low').text(Week[i].low.substr(3))
