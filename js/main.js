@@ -1,4 +1,4 @@
-document.addEventListener('plusready', Main)
+// document.addEventListener('plusready', Main)
 
 /**
  * @description 获取地理位置  显示天气信息 
