@@ -64,6 +64,7 @@ function Main() {
 		$.get(URL, function (result) {
 			tex.value = ''
 			var obj = JSON.parse(result).data
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh()  // 结束下拉刷新
 			$('.city').text(obj.city)
 			$('.now-wendu').text(obj.wendu + '℃')
 			var today = obj.forecast[0]
