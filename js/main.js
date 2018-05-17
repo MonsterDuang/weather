@@ -4,6 +4,8 @@
  * @description 获取地理位置  显示天气信息 
  * */ 
 function Main() {
+	// 下拉刷新
+	mui('#pullrefresh').pullRefresh().refresh(true)
 	//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
 	/**
 	 * 位置工具
@@ -160,3 +162,4 @@ function Main() {
 		}
 	}
 }
+
