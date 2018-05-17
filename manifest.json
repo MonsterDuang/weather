@@ -7,7 +7,7 @@
 	"id": "H5BECFC9A",/*应用的标识，创建应用时自动生成，勿手动修改*/
 	"name": "weather",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "2.1.7",/*应用版本名称*/
+		"name": "2.2.1",/*应用版本名称*/
 		"code": ""
 	},
 	"description": "",/*应用描述信息*/
@@ -16,8 +16,8 @@
 	},
 	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
-		"name": "",/*开发者名称*/
-		"email": "",/*开发者邮箱地址*/
+		"name": "MonsterDuang",/*开发者名称*/
+		"email": "Monsterluo1119@yeah.net",/*开发者邮箱地址*/
 		"url": ""
 	},
 	"permissions": {
