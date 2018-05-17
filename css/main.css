@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
+		padding: 0;
+		user-select: none;  /* 禁止长按复制 */  
 }
 html, body{
 	width: 100%;
@@ -11,6 +12,10 @@ html, body{
     width: 100%;
     height: 100%;
     position: relative;
+}
+.mui-pull-top-pocket, .mui-block, .mui-visibility{
+	display: none;
+	font-size: 0px;
 }
 .icon {
    width: 1em; 
@@ -53,7 +58,7 @@ header{
 .city{
 	font-weight: bolder;
 	position: relative;
-	left:-6%
+	/* left:-6% */
 }
 #tex{
 	width: 100%;
@@ -61,7 +66,7 @@ header{
 	outline: none;
 	border: 1px solid #ccc;
 	border-radius: 1em;
-	padding-left: 1%;
+	padding: 0 30px 0 1%;
 	background: #96c2cb;
 }
 #btn{
@@ -94,7 +99,7 @@ header{
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 30%
+	width: 35%
 }
 .icon-type-weather{
 	width: 100%
@@ -132,3 +137,4 @@ header{
 .icon-type-weather-week{
 	width: 50%;
 }
+
