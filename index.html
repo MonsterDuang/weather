@@ -11,8 +11,8 @@
 	<script src='./js/mui.min.js'></script>
 </head>
 <body>
-	<div id="box pullrefresh">
-		<div class="container">
+	<div id="box">
+		<div class="container" id="pullrefresh">
 			<header>
 				<div class="now-add">
 					<svg class="icon" aria-hidden="true">
@@ -21,7 +21,7 @@
 					<span class="city"></span>
 				</div>
 				<p class="serach">
-					<input type="text" placeholder="请输入要查询的城市......" name="city" id="tex">
+					<input type="search" placeholder="请输入要查询的城市......" name="city" id="tex">
 					<svg class="icon" aria-hidden="true" id="btn">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icserachpub"></use>
 					</svg>
@@ -65,11 +65,13 @@
 	      height:'50px',//可选,默认50px.下拉刷新控件的高度,
 	      range:'100px', //可选 默认100px,控件可下拉拖拽的范围
 	      offset:'0px', //可选 默认0px,下拉刷新控件的起始位置
-	      auto: true,//可选,默认false.首次加载自动上拉刷新一次
+				auto: true,//可选,默认false.首次加载自动上拉刷新一次
 	      callback: Main //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
 	    }
 	  }
 	})
+	mui('#pullrefresh').pullRefresh().pulldownLoading()
 </script>
 
 </html>
+
