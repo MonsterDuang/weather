@@ -58,7 +58,16 @@ function Main() {
 	/*
 	 * @description 通过定位获取到地理信息  传到 这里 获取天气信息
 	 * */
-	$("#btn").click(showWeather)
+	 $("#tex").focus(function () {
+      let originalHeight = document.documentElement.clientHeight || document.body.clientHeight
+      $('body').css('height', originalHeight)
+    }).on("keydown", function (e) {
+        if (e.keyCode == 13) {
+            $("#tex").blur()
+						let text = $("#tex")[0].value
+            showWeather(text)
+        }
+    })
 	function showWeather (site) {
 		var city = tex.value || site
 		var url = "http://wthrcdn.etouch.cn/weather_mini?city="
